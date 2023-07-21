@@ -1,0 +1,842 @@
+:root{
+    --purple:#27142a;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background:  var(--purple);
+}
+
+/* ---header section--- */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding:1.5rem 24%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar a .logo{
+    height:2.8rem;
+}
+
+.navbar .links{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .links a{
+    margin-right: 3.5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.navbar .links a:hover{
+    border-bottom: .3rem solid #4162f6;
+    padding-bottom: .3rem;
+}
+
+.btn{
+    display: inline-block;
+    background: #4162f6;
+    padding:.9rem 2rem;
+    border-radius:10rem;
+}
+
+.navbar .links .r-l{
+    display: flex;
+    align-items: center;
+}
+
+.fa-bars{
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+
+.fa-times{
+    color: white;
+    display: none;
+    font-size: 2rem;
+    position: absolute;
+    top:3%; right: 3%;
+    cursor: pointer;
+}
+
+.navlinks.active{
+    right: 0;
+}
+
+section{
+    padding:1.5rem 24%;
+}
+
+
+
+/* ----hero section---- */
+.h-section{
+    /* height: 150vh; */
+    position: relative;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.hero .left-side{
+    flex: 1 1 30rem;
+}
+
+.hero .left-side .grey-btn{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 3.5rem;
+    width: 23rem;
+    background: grey;
+    padding: .3rem .5rem;
+    border-radius:10rem;
+    margin-bottom: 2rem;
+}
+
+.hero .left-side .grey-btn span{
+    text-transform: lowercase;
+    font-size: 1rem;
+}
+
+.hero .left-side h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.hero .left-side p{
+    color: white;
+    margin: .5rem 0 2rem 0;
+    text-transform: lowercase;
+}
+
+.hero .left-side .btn{
+    color: white;
+}
+
+.fa-arrow-right{
+    padding: .7rem;
+    background: white;
+    border-radius: 50%;
+    color: lightblue;
+    margin-left: 1rem;
+}
+
+.hero .left-side .grey-btn .white-btn{
+    background: white;
+    padding:.2rem .8rem;
+    border-radius:10rem;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.hero .right-side{
+    flex: 1 1 15rem;
+}
+
+.hero .right-side img{
+    width: 100%;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+
+/* ----social proof--- */
+.h-section .box-container{
+    margin: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.h-section .box-container .box{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.h-section .box-container .box .icon{
+    background: #c7e3e1;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: blue;
+}
+
+.h-section .box-container .box .content{
+    color: white;
+}
+
+.h-section .box-container .box .content h3{
+    font-size: 2rem;
+}
+
+.h-section .box-container .box .content p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: lightgray;
+}
+
+.h-section .chapo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: space-between;
+    margin: 8rem 0;
+    padding-bottom: 2rem;
+}
+
+.h-section .chapo .image{
+    flex: 1 1 7rem;
+}
+
+.h-section .chapo .image img{
+    width: 100%;
+}
+
+.h-section .chapo .why-section{
+    flex: 1 1 5rem;
+}
+
+.h-section .chapo .why-section h2{
+    font-size: 3rem;
+    color: white;
+    text-transform: none;
+    margin: 1.5rem 0;
+}
+
+.h-section .chapo .why-section p{
+    font-size: 1.3rem;
+    color: lightgray;
+    text-transform: none;
+    margin: 1.5rem 0;
+}
+
+.h-section .chapo .why-section .btn{
+    margin: 1.5rem 0;
+    color: white;
+}
+
+/* overlapping-card section */
+.h-section .fourth-content{
+    margin: 8rem 0;
+    padding-bottom: 2rem;
+}
+
+.h-section .fourth-content .ca-text{
+    padding: 2rem;
+}
+
+.h-section .fourth-content h2{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.h-section .fourth-content p{
+    color: lightgray;
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+.white{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.h-section .fourth-content .card-container{
+    width: 65rem;
+    height: 20rem;
+    padding: 2rem 3rem;
+    background-color: white;
+    color: black;
+    border-radius: 1.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: absolute;
+    top: 89%;
+    z-index: 1000;
+}
+
+.h-section .fourth-content .card-container .first-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 0 2rem 0;
+    /* padding: 1rem 4rem; */
+}
+
+.h-section .fourth-content .card-container .first-line input{
+    border: none;
+    border-bottom: .1rem solid grey;
+    padding:.7rem 12rem .4rem .7rem;
+    text-align: left;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.h-section .fourth-content .card-container .first-line input:focus{
+    outline: none;
+}
+
+.h-section .fourth-content .card-container .first-line select{
+    border: none;
+    border-bottom: .1rem solid grey;
+    padding:.7rem 10rem .4rem .7rem;
+}
+
+.h-section .fourth-content .card-container .first-line select:focus{
+    outline: none;
+}
+
+.h-section .fourth-content .card-container h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #4162f6;
+    margin:2rem 0;
+}
+
+.h-section .fourth-content .card-container .second-h{
+    font-size: 1.5rem;
+    color: black;
+    margin:2rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.h-section .fourth-content .card-container .second-p{
+    color: grey;
+    margin:2rem 0;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.h-section .fourth-content .card-container .second-h span{
+    color: #4162f6;
+}
+
+.h-section .fourth-content .card-container .btn{
+    font-size: 1.6rem;
+    color: white;
+}
+
+
+/* --------features--- */
+
+ .features{
+    background: white !important;
+    padding-bottom: 4rem;
+}
+
+
+.features .h-features{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 18rem 0 5rem 0;
+}
+
+.features .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.features .box-container .box{
+    width: 25rem;
+    height: 35rem;
+    border-radius: 1rem;
+    text-align: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    animation: all 1s linear;
+    cursor: pointer;
+}
+
+.features .box-container .box img{
+    height: 7rem;
+    margin: 4rem;
+}
+
+.features .box-container .box h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.features .box-container .box i{
+    background: none;
+}
+
+.features .box-container .box h2 span{
+    font-size: 1.4rem;
+    font-weight: 100;
+    position: absolute;
+    right: 22%;
+    top: 18%;
+}
+
+.features .box-container .box h2 span.eth{
+    right: 16%;
+}
+
+.features .box-container .box h2 span.ltc{
+    right: 20%;
+}
+
+.features .box-container .box p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    padding:0 3rem;
+}
+
+.features .box-container .box .btn{
+    color: white;
+    padding: 1.5rem 3.2rem;
+    font-size: 1.5rem;
+}
+
+.frame{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4162f6;
+    border: none;
+    height: 5rem;
+    border-radius:5rem;
+    color: white;
+    text-transform: none;
+}
+
+.features .box-container .box.active{
+    background-color: purple;
+    color: white;
+}
+
+.button .text{
+    display: none;
+}
+
+.frame .button .fa-arrow-right{
+    font-size: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+    color: white;
+}
+
+/* ----last section---- */
+
+.last-section h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+
+.last-section .box-container{
+    margin: 4rem 0;
+    display: flex;
+}
+
+.last-section .box-container .box{
+    flex: 1 1 4rem;
+    margin: 2rem 0;
+}
+
+.last-section .box-container .box h3{
+    font-size: 2rem;
+    color: white;
+}
+
+.last-section .box-container .box p{
+    font-size: 1rem;
+    color: lightgray;
+    padding: 2rem 0;
+}
+
+.last-section .box-container .box img{
+    width: 90%;
+}
+
+.last-section .box-container .box .btn{
+    color: white;
+    background: #4162f6;;
+}
+
+.last-section .c-2{
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.last-section .c-2 .second-image{
+    flex: 1 1 10rem;
+}
+
+.last-section .c-2 .second-image img{
+    width: 100%;
+}
+
+.last-section .c-3{
+    align-items: center;
+}
+
+.last-section .c-3 .third-image{
+    flex: 1 1 7.5rem;
+}
+
+.last-section .c-3 .third-image img{
+    width: 100%;
+}
+
+
+/* ---blue-card--- */
+.last-section .blue{
+    background: url(images/newsletter-box.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 15rem;
+    height: 18rem;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+    gap: 6rem;
+}
+
+.last-section .blue .first-part{
+    flex: 1 1 10rem;
+}
+
+.last-section .blue .first-part h3{
+    font-size: 2rem;
+    color: white;
+    padding: 1.5rem 0;
+}
+
+.last-section .blue .first-part p{
+    font-size: 1rem;
+    color: white;
+}
+
+.last-section .blue .form-element{
+    flex: 1 1 15rem;
+    padding-top: 4rem;
+}
+
+.last-section .blue .form-element form{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.last-section .blue .form-element form input{
+    background: none;
+    border: none;
+    border-bottom: .1rem solid white;
+    width: 70%;
+    color: white;
+}
+
+.last-section .blue form input:focus{
+    outline: none;
+}
+
+.last-section .blue .form-element form .btn{
+    background: #4162f6;
+    padding: 1.3rem 2.5rem;
+    color: white;
+}
+
+
+/* ---footer--- */
+.footer footer{
+    padding-top: 4.5rem ;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer footer h2{
+    font-size: 1.9rem;
+}
+
+.footer footer .p-links{
+    margin-top: 3rem;
+}
+
+.footer footer p{
+    margin:2rem 0;
+    font-size: 1.2rem;
+}
+
+.footer footer .pay-sys{
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.footer footer .pay-sys img{
+    flex: 1 1 2rem;
+    height: 5rem;
+}
+
+.footer .copyright{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .copyright p{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.footer .copyright i{
+    color: white;
+    font-size: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.footer .copyright i:hover{
+    color:#4162f6;
+}
+
+
+
+
+/* ----media queries--- */
+@media only screen and (max-width: 1000px){
+    .navbar{
+        padding:1.3rem 2rem;
+    }
+
+    section{
+        padding:1.3rem 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .navbar{
+        padding:1.5rem 12%;
+    }
+
+    html{
+        font-size: 65%;
+    }
+
+    section{
+        padding:1rem 5%;
+    }
+
+    .fa-bars{
+        display: initial;
+        cursor: pointer;
+    }
+
+    .navlinks{
+        position:fixed;
+        top:0; right: -100%;
+        background: var(--purple);
+        width: 100vw;
+        min-height: 100vh;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+    }
+
+    .navlinks .links{
+        flex-flow: column;
+        /* align-items: center; */
+        gap: 6rem;
+      
+    }
+
+    .navlinks .links a{
+        font-size: 2rem;
+        margin-right: 0;
+    }
+
+    .navlinks .links .r-l{
+        gap: 4rem;
+    }
+
+    .fa-times{
+        color: white;
+        font-size: 2rem;
+        position: absolute;
+        top:3%; right: 3%;
+        cursor: pointer;
+        display: initial;
+    }
+
+    .hero{
+        padding:2rem 23%;
+    }
+
+    .h-section .box-container{
+        flex-flow: column;
+        gap: 5rem;
+        align-items: center; 
+    }
+
+    /* .features{
+        background: white !important;
+    } */
+
+    .features .box-container{
+        margin: 6rem 0 2rem 0;
+        justify-content: center;
+    }
+
+    .features .box-container .box{
+        width: 95%;
+    }
+
+    .h-section .chapo{
+        flex-flow: column;
+        padding:2rem 23%;
+    }
+
+    .fourth-content .ca-text{
+        margin-bottom: 10rem;
+    }
+
+    .h-section .fourth-content .white{
+        padding: 3rem;
+    }
+
+    .h-section .fourth-content .card-container{
+        width: 35rem;
+        height: 40rem;
+    }
+
+    .h-section .fourth-content .card-container .first-line{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .h-section .fourth-content .card-container .first-line input,.first-line select{
+     width: 100%;
+    }
+
+
+    .h-section .fourth-content .card-container .btn,h3,.second-h,.second-p{
+        margin:2rem 0;
+    }
+
+    .features .box-container .box h2 span.eth{
+        right: 28%;
+        top: 5%;
+    }
+
+    .features .box-container .box h2 span.ltc{
+        right: 31%;
+        top: 5%;
+    }
+
+    .features .box-container .box h2 span{
+        right: 31.5%;
+        top: 5%;
+    }
+
+    .last-section .box-container{
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .copyright div{
+        margin: 2rem 0;
+    }
+
+    .footer footer, .copyright{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer footer .pay-sys{
+        text-align: center;
+        width: 40%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    footer div{
+        margin: 2rem 0;
+    }
+
+    .last-section .blue{
+        height: 21rem;
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    .last-section .blue h2{
+        padding: 1.5rem 0;
+    }
+
+    .last-section .blue .form-element{
+        padding-top: 1rem;
+    }
+
+    .last-section .blue .first-part h3{
+        padding: 0;
+    }
+
+    .last-section .blue .form-element form{
+        display: block;
+    }
+
+    .last-section .blue .form-element form input{
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+    .last-section .blue .btn{
+        margin: 1.2rem 0;
+    }
+
+
+
+
+}
